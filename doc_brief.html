@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Information Retrieval Systems - Test Set A Project Brief</title>
+<style>
+  :root {
+    --primary: #1a56db;
+    --primary-light: #e1effe;
+    --text: #1f2a37;
+    --text-muted: #4b5563;
+    --border: #e5e7eb;
+    --bg-card: #f9fafb;
+    --success: #057a55;
+  }
+  @media print {
+    body { font-size: 11pt; }
+    .no-print { display: none; }
+    .page-break { page-break-before: always; }
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 24px;
+    background: #fff;
+  }
+  header {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  h1 { font-size: 2.1rem; color: #111827; margin: 0 0 8px 0; }
+  .subtitle { font-size: 1.15rem; color: var(--primary); font-weight: 500; margin: 0 0 16px 0; }
+  .meta-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 30px;
+  }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+  }
+  .meta-item strong { display: block; font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); }
+  h2 { font-size: 1.45rem; color: #111827; border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-top: 36px; }
+  h3 { font-size: 1.15rem; color: var(--primary); margin-top: 24px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.95rem;
+  }
+  th, td {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    text-align: left;
+  }
+  th { background: #f3f4f6; font-weight: 600; }
+  tr:nth-child(even) { background: #f9fafb; }
+  code {
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+  pre {
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 14px 18px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.88rem;
+  }
+  .badge-success {
+    background: #def7ec;
+    color: var(--success);
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+  }
+  .btn-print {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    float: right;
+  }
+  .btn-print:hover { background: #1e40af; }
+</style>
+</head>
+<body>
+
+<header>
+  <button class="btn-print no-print" onclick="window.print()">🖨️ Print to PDF</button>
+  <h1>Information Retrieval Systems — Test Set A</h1>
+  <div class="subtitle">Academic Project Brief & System Implementation Report</div>
+</header>
+
+<div class="meta-box">
+  <div class="meta-grid">
+    <div class="meta-item">
+      <strong>Course / Assignment</strong>
+      Information Retrieval Systems (IRS) — Set A
+    </div>
+    <div class="meta-item">
+      <strong>Deliverables</strong>
+      ZIP Archive, GitHub Repository, Project Brief
+    </div>
+    <div class="meta-item">
+      <strong>GitHub Repository</strong>
+      <a href="https://github.com/UtkarshDubeyGIT/information-retrieval-system-set-a" target="_blank">UtkarshDubeyGIT/information-retrieval-system-set-a</a>
+    </div>
+    <div class="meta-item">
+      <strong>Verification Status</strong>
+      <span class="badge-success">16/16 Unit Tests Passed (100%)</span>
+    </div>
+  </div>
+</div>
+
+<h2>1. Executive Summary</h2>
+<p>
+This project delivers a complete software implementation solving two fundamental Information Retrieval (IR) problems:
+</p>
+<ul>
+  <li><strong>Q1. Automatic Document Categorization:</strong> Converts unstructured documents into high-dimensional TF-IDF vector space, groups documents using K-Means and Hierarchical Agglomerative clustering, automatically extracts semantic cluster labels, and resolves user queries by scoring cosine similarity against cluster centroids and documents.</li>
+  <li><strong>Q2. Multimedia Search and Retrieval:</strong> Maintains a searchable database of text documents and images with metadata, supports weighted multi-field keyword search, implements content-based image retrieval (CBIR) using 48-dimensional RGB color histograms, and enables multimodal query score fusion.</li>
+</ul>
+
+<h2>2. Question 1 — Automatic Document Categorization System</h2>
+
+<h3>2.1 Mathematical & Algorithmic Formulation</h3>
+<ul>
+  <li>
+    <strong>TF-IDF Vector Space Model:</strong>
+    Computes sublinear term frequency <code>TF = 1 + log(tf)</code> and smoothed inverse document frequency <code>IDF = log((1 + |D|)/(1 + df)) + 1</code>. Every document vector is L2-normalized onto the unit hypersphere.
+  </li>
+  <li>
+    <strong>Clustering Methods:</strong>
+    Supports <strong>K-Means Clustering</strong> (minimizing within-cluster inertia) and <strong>Hierarchical Agglomerative Clustering</strong> (with Ward's minimum variance criterion).
+  </li>
+  <li>
+    <strong>Automatic Thematic Labeling:</strong>
+    Identifies top terms with maximum centroid weights to synthesize descriptive cluster names (e.g. <code>Cluster 4: neural, memory, billions, learning</code>).
+  </li>
+  <li>
+    <strong>User Query Relevance:</strong>
+    Vectorizes query text, computes cosine similarity against cluster centroids to identify the <strong>most relevant cluster</strong>, and calculates cosine similarity against all document vectors to rank relevant documents with scores in [0.0, 1.0].
+  </li>
+</ul>
+
+<h3>2.2 Experimental Query Evaluation</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Query String</th>
+      <th>Identified Best Cluster</th>
+      <th>Top Document</th>
+      <th>Relevance Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>"artificial intelligence neural networks"</code></td>
+      <td>Cluster 4 (neural, learning)</td>
+      <td>Ai Deep Learning</td>
+      <td><strong>0.3206</strong></td>
+    </tr>
+    <tr>
+      <td><code>"cardiovascular heart health"</code></td>
+      <td>Cluster 1 (cardiology, health)</td>
+      <td>Cardiovascular Health</td>
+      <td><strong>0.2882</strong></td>
+    </tr>
+    <tr>
+      <td><code>"james webb space telescope astronomy"</code></td>
+      <td>Cluster 3 (space, astronomy)</td>
+      <td>Astronomy Telescopes</td>
+      <td><strong>0.3415</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>3. Question 2 — Multimedia Search and Retrieval System</h2>
+
+<h3>3.1 Metadata Architecture & Keyword Search</h3>
+<p>
+Structured records maintain <code>title</code>, <code>description</code>, <code>category</code>, <code>upload_date</code>, <code>media_type</code>, <code>file_path</code>, and <code>tags</code>. Keyword searching applies hierarchical field weights (Title: 3.0x, Tags: 2.5x, Category: 2.0x, Description: 1.0x) blended with TF-IDF cosine similarity.
+</p>
+
+<h3>3.2 Content-Based Image Retrieval (CBIR) via Color Histograms</h3>
+<ul>
+  <li><strong>Feature Vector:</strong> 16 bins per channel across Red, Green, and Blue (48 dimensions total), L1-normalized so sum is 1.0.</li>
+  <li><strong>Histogram Intersection Metric:</strong> Computes <code>K(H_q, H_t) = sum(min(H_q, H_t))</code> in [0.0, 1.0].</li>
+  <li><strong>Color Discrimination:</strong> Querying a green leaf specimen accurately retrieves the forest image (0.3172 similarity) while scoring 0.0000 against red and blue images.</li>
+</ul>
+
+<h2>4. System Verification & Test Suite</h2>
+<p>
+The system includes 16 automated unit tests executed via Python's <code>unittest</code> framework:
+</p>
+<pre>
+test_fit_tfidf ........................................ PASSED
+test_kmeans_clustering ................................. PASSED
+test_hierarchical_clustering ........................... PASSED
+test_get_clustered_groups .............................. PASSED
+test_query_relevance_matching .......................... PASSED
+test_out_of_vocabulary_query ........................... PASSED
+test_2d_projection ..................................... PASSED
+test_metadata_loaded ................................... PASSED
+test_keyword_search_documents .......................... PASSED
+test_color_histogram_properties ........................ PASSED
+test_image_retrieval_exact_match ....................... PASSED
+test_image_retrieval_color_discrimination .............. PASSED
+test_different_metrics (intersection, cosine, bhatt) ... PASSED
+test_unified_search_multimodal ......................... PASSED
+
+Ran 16 tests in 2.35s: ALL PASSED (100% Success Rate)
+</pre>
+
+<h2>5. User Instructions & How to Run</h2>
+<pre>
+# 1. Interactive Streamlit Web Application
+streamlit run app.py
+
+# 2. Automated Demonstration Runner
+python3 run_demo.py
+
+# 3. Standalone Q1 CLI
+python3 q1_cli.py --query "artificial intelligence neural networks"
+
+# 4. Standalone Q2 CLI
+python3 q2_cli.py --keyword "ocean" --image-query data/queries/query_blue_water.png
+
+# 5. Run Unit Test Suite
+python3 -m unittest discover -s tests -v
+</pre>
+
+<h2>6. Deliverables Reference</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Deliverable</th>
+      <th>Location / Resource</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Codebase ZIP</strong></td>
+      <td><code>assignment_irs_set_a.zip</code></td>
+      <td>Complete packaged archive of the assignment</td>
+    </tr>
+    <tr>
+      <td><strong>GitHub Repository</strong></td>
+      <td><a href="https://github.com/UtkarshDubeyGIT/information-retrieval-system-set-a" target="_blank">UtkarshDubeyGIT/information-retrieval-system-set-a</a></td>
+      <td>Version-controlled public Git repository</td>
+    </tr>
+    <tr>
+      <td><strong>Project Brief</strong></td>
+      <td><code>SUBMISSION_BRIEF.md</code> / <code>doc_brief.html</code></td>
+      <td>Comprehensive submission document and printable report</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

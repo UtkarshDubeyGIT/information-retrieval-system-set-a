@@ -1,0 +1,341 @@
+[
+  {
+    "id": "DOC-001",
+    "title": "Deep Learning and Neural Network Architectures",
+    "description": "Deep learning models utilize multi-layered artificial neural networks to learn representations from raw data. Convolutional neural networks excel at spatial feature extraction in i...",
+    "category": "Artificial Intelligence",
+    "upload_date": "2026-02-03",
+    "media_type": "text",
+    "file_path": "data/documents/ai_deep_learning.txt",
+    "tags": [
+      "deep learning",
+      "neural networks",
+      "backpropagation",
+      "transformers",
+      "gpu",
+      "ai"
+    ]
+  },
+  {
+    "id": "DOC-002",
+    "title": "Natural Language Processing and Large Language Models",
+    "description": "Natural language processing has undergone a revolution with self-attention transformer models. Tokenization strategies, attention heads, and positional encodings enable models to p...",
+    "category": "Artificial Intelligence",
+    "upload_date": "2026-03-05",
+    "media_type": "text",
+    "file_path": "data/documents/nlp_transformers.txt",
+    "tags": [
+      "nlp",
+      "transformers",
+      "language models",
+      "chatbots",
+      "tokenization",
+      "text analysis"
+    ]
+  },
+  {
+    "id": "DOC-003",
+    "title": "Cloud Infrastructure and Containerized Microservices",
+    "description": "Modern cloud native applications break monolithic software into modular microservices. Container virtualization tools like Docker and container orchestration platforms like Kuberne...",
+    "category": "Information Technology",
+    "upload_date": "2026-04-07",
+    "media_type": "text",
+    "file_path": "data/documents/cloud_microservices.txt",
+    "tags": [
+      "cloud computing",
+      "docker",
+      "kubernetes",
+      "microservices",
+      "devops",
+      "containers"
+    ]
+  },
+  {
+    "id": "DOC-004",
+    "title": "Cardiovascular Health and Heart Disease Prevention",
+    "description": "Cardiovascular diseases remain the leading cause of global mortality. Coronary artery disease involves atherosclerotic plaque buildup inside arterial walls, restricting blood flow ...",
+    "category": "Medicine & Health",
+    "upload_date": "2026-05-09",
+    "media_type": "text",
+    "file_path": "data/documents/cardiovascular_health.txt",
+    "tags": [
+      "heart disease",
+      "cardiovascular",
+      "cholesterol",
+      "blood pressure",
+      "cardiology",
+      "health"
+    ]
+  },
+  {
+    "id": "DOC-005",
+    "title": "Immunology, Antibodies, and Modern Vaccine Platforms",
+    "description": "The human immune system relies on innate and adaptive responses against invading pathogens. B lymphocytes produce antigen-specific neutralizing antibodies, while cytotoxic T lympho...",
+    "category": "Medicine & Health",
+    "upload_date": "2026-06-11",
+    "media_type": "text",
+    "file_path": "data/documents/immunology_vaccines.txt",
+    "tags": [
+      "vaccines",
+      "immunology",
+      "antibodies",
+      "pathogens",
+      "immune response",
+      "viruses"
+    ]
+  },
+  {
+    "id": "DOC-006",
+    "title": "Neuroscience and Cerebral Cognitive Function",
+    "description": "The human brain comprises billions of neurons communicating across synaptic junctions via chemical neurotransmitters. Neuroplasticity enables the cerebral cortex to reorganize neur...",
+    "category": "Medicine & Health",
+    "upload_date": "2026-07-13",
+    "media_type": "text",
+    "file_path": "data/documents/neuroscience_brain.txt",
+    "tags": [
+      "neuroscience",
+      "brain",
+      "neurons",
+      "cognition",
+      "synaptic",
+      "neurology"
+    ]
+  },
+  {
+    "id": "DOC-007",
+    "title": "Deep Space Astronomy and Space Telescopes",
+    "description": "Spaceborne observatories like the James Webb Space Telescope observe the cosmos in the infrared spectrum. Astronomers peer back over thirteen billion years to detect the earliest p...",
+    "category": "Space Science",
+    "upload_date": "2026-08-15",
+    "media_type": "text",
+    "file_path": "data/documents/astronomy_telescopes.txt",
+    "tags": [
+      "astronomy",
+      "telescopes",
+      "space",
+      "galaxies",
+      "james webb",
+      "cosmology"
+    ]
+  },
+  {
+    "id": "DOC-008",
+    "title": "Mars Planetary Science and Robotic Exploration",
+    "description": "Exploration of the red planet Mars has accelerated with autonomous rovers equipped with drill spectrometers and hazard cameras. Planetary geologists study ancient lakebeds in Jezer...",
+    "category": "Space Science",
+    "upload_date": "2026-09-17",
+    "media_type": "text",
+    "file_path": "data/documents/mars_planetary_science.txt",
+    "tags": [
+      "mars",
+      "planetary exploration",
+      "rovers",
+      "spaceflight",
+      "geology",
+      "space"
+    ]
+  },
+  {
+    "id": "DOC-009",
+    "title": "Black Holes, General Relativity, and Gravitational Waves",
+    "description": "General relativity predicts extreme gravitational curvature where matter collapses into a spacetime singularity. Black holes feature an event horizon beyond which neither radiation...",
+    "category": "Space Science",
+    "upload_date": "2026-10-19",
+    "media_type": "text",
+    "file_path": "data/documents/black_holes_gravity.txt",
+    "tags": [
+      "black holes",
+      "gravity",
+      "general relativity",
+      "gravitational waves",
+      "astrophysics"
+    ]
+  },
+  {
+    "id": "DOC-010",
+    "title": "Macroeconomic Policy, Inflation, and Central Banking",
+    "description": "Macroeconomic stability requires balancing economic growth with sustainable inflation targets. Central banking institutions use quantitative tightening and benchmark interest rate ...",
+    "category": "Finance & Economics",
+    "upload_date": "2026-11-21",
+    "media_type": "text",
+    "file_path": "data/documents/macroeconomics_inflation.txt",
+    "tags": [
+      "macroeconomics",
+      "inflation",
+      "central bank",
+      "interest rates",
+      "monetary policy",
+      "economy"
+    ]
+  },
+  {
+    "id": "DOC-011",
+    "title": "Equity Markets, Portfolio Diversification, and Asset Allocation",
+    "description": "Investing in public capital markets requires disciplined risk management and portfolio diversification. Modern portfolio theory suggests blending non-correlated asset classes, such...",
+    "category": "Finance & Economics",
+    "upload_date": "2026-12-23",
+    "media_type": "text",
+    "file_path": "data/documents/stock_market_investing.txt",
+    "tags": [
+      "stocks",
+      "investing",
+      "portfolio",
+      "finance",
+      "equities",
+      "asset management"
+    ]
+  },
+  {
+    "id": "DOC-012",
+    "title": "Financial Technology and Decentralized Blockchain Ledgers",
+    "description": "Fintech innovations transform payment rails and banking infrastructure through distributed cryptographic ledgers. Blockchain protocols utilize consensus algorithms such as proof-of...",
+    "category": "Finance & Economics",
+    "upload_date": "2026-01-25",
+    "media_type": "text",
+    "file_path": "data/documents/crypto_fintech.txt",
+    "tags": [
+      "fintech",
+      "blockchain",
+      "cryptocurrency",
+      "defi",
+      "finance",
+      "transactions"
+    ]
+  },
+  {
+    "id": "DOC-013",
+    "title": "Association Football Strategy and Tactical Pressing",
+    "description": "Professional soccer tactical systems emphasize high pressing, spatial awareness, and fluid positional transitions. Coaches deploy 4-3-3 or 3-5-2 formations to dominate midfield pos...",
+    "category": "Sports & Athletics",
+    "upload_date": "2026-02-27",
+    "media_type": "text",
+    "file_path": "data/documents/football_tactics.txt",
+    "tags": [
+      "football",
+      "soccer",
+      "tactics",
+      "sports",
+      "world cup",
+      "athletics"
+    ]
+  },
+  {
+    "id": "DOC-014",
+    "title": "Grand Slam Tennis Championships and Court Surfaces",
+    "description": "Elite tennis competition tests athletic endurance, technical ball striking, and psychological resilience across four Grand Slam tournaments. Playing surfaces alter ball bounce dyna...",
+    "category": "Sports & Athletics",
+    "upload_date": "2026-03-01",
+    "media_type": "text",
+    "file_path": "data/documents/tennis_grand_slam.txt",
+    "tags": [
+      "tennis",
+      "grand slam",
+      "wimbledon",
+      "sports",
+      "championship",
+      "athletics"
+    ]
+  },
+  {
+    "id": "DOC-015",
+    "title": "Marathon Training, Aerobic Physiology, and Endurance Running",
+    "description": "Distance running performance relies heavily on aerobic capacity, lactate threshold efficiency, and running economy. Marathon runners structure training blocks around progressive lo...",
+    "category": "Sports & Athletics",
+    "upload_date": "2026-04-03",
+    "media_type": "text",
+    "file_path": "data/documents/marathon_endurance.txt",
+    "tags": [
+      "marathon",
+      "endurance",
+      "running",
+      "athletics",
+      "training",
+      "sports"
+    ]
+  },
+  {
+    "id": "IMG-001",
+    "title": "Lush Emerald Forest Canopy",
+    "description": "Dense woodland canopy filled with vivid green pine leaves, moss-covered trees, and vibrant emerald flora.",
+    "category": "Nature & Landscape",
+    "upload_date": "2026-02-04",
+    "media_type": "image",
+    "file_path": "data/images/forest_lush_green.png",
+    "tags": [
+      "nature",
+      "forest",
+      "green",
+      "trees",
+      "foliage",
+      "landscape"
+    ]
+  },
+  {
+    "id": "IMG-002",
+    "title": "Deep Azure Ocean Waters",
+    "description": "Vibrant cobalt and azure ocean waves under clear maritime skies, exhibiting rich blue aquatic hues.",
+    "category": "Nature & Landscape",
+    "upload_date": "2026-03-07",
+    "media_type": "image",
+    "file_path": "data/images/ocean_deep_blue.png",
+    "tags": [
+      "ocean",
+      "sea",
+      "blue",
+      "water",
+      "marine",
+      "azure"
+    ]
+  },
+  {
+    "id": "IMG-003",
+    "title": "Fiery Crimson Horizon Sunset",
+    "description": "Dramatic sunset horizon bursting with blazing crimson reds, rich scarlet, and warm glowing amber light.",
+    "category": "Nature & Landscape",
+    "upload_date": "2026-04-10",
+    "media_type": "image",
+    "file_path": "data/images/sunset_crimson_red.png",
+    "tags": [
+      "sunset",
+      "red",
+      "crimson",
+      "sky",
+      "horizon",
+      "warmth"
+    ]
+  },
+  {
+    "id": "IMG-004",
+    "title": "Golden Sahara Sand Dunes",
+    "description": "Expansive desert dunes glowing with warm golden yellow sand, amber ridges, and sunny ochre minerals.",
+    "category": "Nature & Landscape",
+    "upload_date": "2026-05-13",
+    "media_type": "image",
+    "file_path": "data/images/desert_golden_yellow.png",
+    "tags": [
+      "desert",
+      "sand",
+      "yellow",
+      "golden",
+      "dunes",
+      "sahara"
+    ]
+  },
+  {
+    "id": "IMG-005",
+    "title": "Cosmic Purple Nebula Cloud",
+    "description": "Astronomical deep space nebula glowing with cosmic purple, ultraviolet dust clouds, and magenta stars.",
+    "category": "Space Science",
+    "upload_date": "2026-06-16",
+    "media_type": "image",
+    "file_path": "data/images/galaxy_neon_purple.png",
+    "tags": [
+      "galaxy",
+      "nebula",
+      "space",
+      "purple",
+      "violet",
+      "astronomy"
+    ]
+  }
+]

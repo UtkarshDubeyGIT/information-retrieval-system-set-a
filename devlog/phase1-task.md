@@ -1,0 +1,28 @@
+# Task List - Test Set A Implementation
+
+- [x] **Phase 1: Environment & Project Setup**
+  - [x] Check Python environment and pip compatibility
+  - [x] Complete installation of required dependencies (`scikit-learn`, `streamlit`, `pillow`, `matplotlib`)
+  - [x] Initialize project directory structure (`src/`, `data/`, `tests/`, `devlog/`)
+- [x] **Phase 2: Sample Dataset Creation**
+  - [x] Create diverse text documents across 5 domains (AI, Medicine, Space, Economy, Sports)
+  - [x] Generate distinct color profile catalog images (Forest Green, Ocean Blue, Sunset Red, Desert Yellow, Galaxy Purple)
+  - [x] Generate query test images (Green Leaf, Blue Lagoon, Red Fire)
+  - [x] Build unified metadata repository `metadata.json` for Q2
+- [x] **Phase 3: Core Engine Implementation (Q1 & Q2)**
+  - [x] Implement `src/q1_categorization.py`: TF-IDF vectorizer, K-Means, Hierarchical clustering, cluster topic extraction, query-to-cluster matching
+  - [x] Implement `src/q2_multimedia.py`: Metadata indexing, keyword search with weighting, color histogram extractor, histogram intersection/cosine similarity
+  - [x] Implement `src/utils.py`: Dataset helpers, synthetic image generator, catalog manager
+- [x] **Phase 4: Applications & Interfaces**
+  - [x] Implement standalone CLI for Q1 (`q1_cli.py`)
+  - [x] Implement standalone CLI for Q2 (`q2_cli.py`)
+  - [x] Implement unified demo script (`run_demo.py`)
+  - [x] Implement full-featured Streamlit Web Application (`app.py`) with visual clustering plots and image galleries
+- [x] **Phase 5: Verification & Quality Assurance**
+  - [x] Write and run comprehensive unit tests (`tests/test_q1.py`, `tests/test_q2.py`) - all 16 tests passing
+  - [x] Validate CLI outputs and query matching accuracy
+  - [x] Verify Streamlit web application components
+- [x] **Phase 6: Final Documentation & Archival**
+  - [x] Write detailed `README.md` with theoretical foundations and instructions
+  - [x] Generate devlog files (`phase1-implementation_plan.md`, `phase1-task.md`, `phase1-walkthrough.md`) in `devlog/`
+  - [x] Package everything into `assignment_irs_set_a.zip`
